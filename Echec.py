@@ -34,21 +34,34 @@ MAPHEIGHT = 8
 
 pygame.init()
 DISPLAYSURF = pygame.display.set_mode((MAPWIDTH*TILESIZE,MAPHEIGHT*TILESIZE))
-rein = []
+reine = []
 tour = []
 #Ouverture de la fen?tre Pygame
 fenetre = pygame.display.set_mode((800, 800))
 pygame.display.set_caption('Echec')
 #Chargement et collage du fond
 
-#Chargement et collage du personnage
-reinp = pygame.image.load("pion/rein.png").convert_alpha()
-rein = [400,0]
-fenetre.blit(reinp, (rein[0], rein[1]))
+#Chargement et collage des pi?ces
+reinep = pygame.image.load("pion/reine.png").convert_alpha()
+reine = [0,0]
+fenetre.blit(reinep, (reine[0], reine[1]))
 
 tourp = pygame.image.load("pion/tour.png").convert_alpha()
 tour = [0,0]
 fenetre.blit(tourp, (tour[0], tour[1]))
+
+def pos_piece(piece, abscisse, ordonnee):
+    if abscisse <= 7 or ordonnee <= 7:
+        piece[0] = abscisse*(800/8)
+        piece[1] = ordonnee*(800/8)
+    if abscisse > 7 or ordonnee > 7:
+        print("Error, piece value is too high")
+        piece[0] = 0
+        piece[1] = 0
+
+
+pos_piece(tour, 0, 0)
+pos_piece(reine, 3, 0)
 
 pygame.display.flip()
 
@@ -60,16 +73,15 @@ while (continuer):
                     continuer = False
 		if event.type == MOUSEBUTTONDOWN:
                     if event.button == 1:
-                            if reinpo.collidepoint(event.pos[0],event.pos[1]):          #Prend le pion
+                            if reinepo.collidepoint(event.pos[0],event.pos[1]):          #Prend le pion
                                 print("Select G")
                                 time.sleep(2)                                           #Attend 2s avant annulation
                                 for event in pygame.event.get():
                                     if event.type == MOUSEBUTTONDOWN:                  #Pose le pion
                                             if event.button == 1:
                                                 print("Select D")
-                                                rein[0] = event.pos[0]
-                                                rein[1] = event.pos[1]
-                                print("ok rein")
+                                                pos_piece(reine,event.pos[0] // 100,event.pos[1] // 100)
+                                print("ok reine")
                             if tourpo.collidepoint(event.pos[0],event.pos[1]):         #Prend le pion
                                 print("Select G")
                                 time.sleep(2)                                          #Attend 2s avant annulation
@@ -77,8 +89,7 @@ while (continuer):
                                     if event.type == MOUSEBUTTONDOWN:                  #Pose le pion
                                             if event.button == 1:
                                                 print("Select D")
-                                                tour[0]= event.pos[0]
-                                                tour[1] = event.pos[1]
+                                                pos_piece(tour,event.pos[0] // 100,event.pos[1] // 100)
                                 print("ok tour")
         for row in range(MAPHEIGHT):
                  #loop through each column in the row
@@ -87,7 +98,7 @@ while (continuer):
                     pygame.draw.rect(DISPLAYSURF, colours[tilemap[row][column]], (column*TILESIZE,row*TILESIZE,TILESIZE,TILESIZE))
 
 	#Re-collage
-	reinpo = fenetre.blit(reinp, (rein[0], rein[1]))
+	reinepo = fenetre.blit(reinep, (reine[0], reine[1]))
 	tourpo = fenetre.blit(tourp, (tour[0], tour[1]))
 	#Rafraichissement
 	pygame.display.flip()
