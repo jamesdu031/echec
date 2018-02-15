@@ -14,6 +14,13 @@ TODO
  | Affichage de tous les pions  |☐|
  
  --------
+ Dépendance
+ -
+ 
+ - Python 2.6
+ - Pygame pour Python 2.6
+ 
+ --------
  Fonctionnement
  -
  **Importation**
