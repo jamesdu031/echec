@@ -175,8 +175,8 @@ Les case blanches ont une couleur (RGB) de: **255 255 255**
 Capture
 -
 
-**Voici des captures (v0.1-alpha.1)**
-<img src="https://raw.githubusercontent.com/jamesdu031/echec/master/screen.PNG" alt="t" style="width: 200px;"/>
+**Voici des captures (v0.1-alpha.1)**  
+<img src="https://raw.githubusercontent.com/jamesdu031/echec/master/screen.PNG" alt="" width="200" height="200"/>
 
 ----------
 MIT License Copyright (c) 2018
