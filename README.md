@@ -172,9 +172,9 @@ Le damier
 
 **Le damier est généré par le programme (voir [#fonctionnement](#fonctionnement))**
 
-Les case noirs ont une couleur (RGB) de: **150 150 150**  
-Les case blanches ont une couleur (RGB) de: **255 255 255**  
-Pour plus de détail voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**.  
+Les cases noirs ont une couleur (RGB) de: **150 150 150**  
+Les cases blanches ont une couleur (RGB) de: **255 255 255**  
+Pour plus de détails voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**.  
 
 
 ----------
