@@ -29,7 +29,7 @@ Dépendance
 Fonctionnement
 -
 
-Pour le fonctionnement détailler (Respect des règles, menu...) voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**  
+Pour le fonctionnement détaillé (Respect des règles, menu, ...) voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**  
 
 **Importation**
 
@@ -141,7 +141,7 @@ Pour le fonctionnement détailler (Respect des règles, menu...) voir le **[wiki
                         pygame.draw.rect(DISPLAYSURF, colours[tilemap[row][column]],     (column*TILESIZE,row*TILESIZE,TILESIZE,TILESIZE))
                     
                     
-**Affichage des pièce et fin du programme**
+**Affichage des pièces et fin du programme**
 
 
       reinepo = fenetre.blit(reinep, (reine[0], reine[1]))
@@ -170,7 +170,7 @@ Les pièces
 Le damier
 -
 
-**Le damier est générer par le programme (voir [#fonctionnement](#fonctionnement))**
+**Le damier est généré par le programme (voir [#fonctionnement](#fonctionnement))**
 
 Les case noirs ont une couleur (RGB) de: **150 150 150**  
 Les case blanches ont une couleur (RGB) de: **255 255 255**  
@@ -186,6 +186,6 @@ Capture
 <img src="https://raw.githubusercontent.com/jamesdu031/echec/master/screen.PNG" alt="" width="200" height="200"/>
 
 ----------
-**Pour toute questions, erreur/bug voir [issues](https://github.com/jamesdu031/echec/issues).**  
+**Pour toutes questions, erreur/bug voir [issues](https://github.com/jamesdu031/echec/issues).**  
 
 MIT License Copyright (c) 2018
