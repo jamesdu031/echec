@@ -10,7 +10,7 @@ TODO
 | --------------------- | :------------------------: |
 | Affichage du damier   |☑|
 | Affichage des pions   |☑|
-| Écran d'accueil       |☐|
+| Écran d'accueil       |☑|
 | Déplacer les pions    |☑|
 | Respect des règles    |☐|
 | Affichage de tous les pions  |☐|
@@ -26,10 +26,31 @@ Dépendance
  - Pygame pour Python 2.7
 
 --------
+Complie & run
+-
+**Vous avez besoins de toute les dépendances installer.**  
+
+Télécharger:  
+
+    $ git clone https://github.com/jamesdu031/echec.git
+
+Pour lancer sans compiler:  
+
+    $ python menu.py
+
+Pour complier et lancer:  
+
+    $ python complie.py
+	$ python menu.pyc
+
+**Ou sinon vous pouvez toujours télécharger la dernière release:**  
+[https://github.com/jamesdu031/echec/releases](https://github.com/jamesdu031/echec/releases)
+
+--------
 Fonctionnement
 -
 
-Pour le fonctionnement détaillé (Respect des règles, menu, ...) voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**  
+Pour le fonctionnement détaillé (Respect des règles, menu...) voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**  
 
 **Importation**
 
@@ -170,11 +191,11 @@ Les pièces
 Le damier
 -
 
-**Le damier est généré par le programme (voir [#fonctionnement](#fonctionnement))**
+**Le damier est générer par le programme (voir [#fonctionnement](#fonctionnement))**
 
 Les cases noirs ont une couleur (RGB) de: **150 150 150**  
 Les cases blanches ont une couleur (RGB) de: **255 255 255**  
-Pour plus de détails voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**.  
+Pour plus de détail voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**.  
 
 
 ----------
