@@ -14,6 +14,8 @@ TODO
 | Déplacer les pions    |☑|
 | Respect des règles    |☐|
 | Affichage de tous les pions  |☐|
+
+**[Voir plus](https://github.com/jamesdu031/echec/projects/1)**
  
  --------
 Dépendance
