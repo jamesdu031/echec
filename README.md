@@ -26,6 +26,8 @@ Dépendance
 Fonctionnement
 -
 
+Pour le fonctionnement détailler (Respect des règles, menu...) voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**  
+
 **Importation**
 
 
@@ -168,15 +170,18 @@ Le damier
 **Le damier est générer par le programme (voir [#fonctionnement](#fonctionnement))**
 
 Les case noirs ont une couleur (RGB) de: **150 150 150**  
-Les case blanches ont une couleur (RGB) de: **255 255 255**
+Les case blanches ont une couleur (RGB) de: **255 255 255**  
+Pour plus de détail voir le **[wiki](https://github.com/jamesdu031/echec/wiki)**.  
 
 
 ----------
 Capture
 -
 
-**Voici des captures (v0.1-alpha.1)**  
+**Voici des captures (v0.1-alpha.1)**
 <img src="https://raw.githubusercontent.com/jamesdu031/echec/master/screen.PNG" alt="" width="200" height="200"/>
 
 ----------
+**Pour toute questions, erreur/bug voir [issues](https://github.com/jamesdu031/echec/issues).**  
+
 MIT License Copyright (c) 2018
