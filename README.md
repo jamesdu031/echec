@@ -1,36 +1,39 @@
 # Echec
-Le jeu echec pour un devoir ISN
+Le jeu d'echec pour un devoir ISN
 
 ---------
 TODO
 -
- |Point|Etat|
- |---------------------|:------------------------:|
- | Affichage du damier   |☑|
- | Affichage des pions   |☑|
- | Ecran d'accueil       |☐|
- | Déplacer les pions    |☑|
- | Respect des règles    |☐|
- | Affichage de tous les pions  |☐|
+
+| Point | Etat |
+| --------------------- | :------------------------: |
+| Affichage du damier   |☑|
+| Affichage des pions   |☑|
+| Ecran d'accueil       |☐|
+| Déplacer les pions    |☑|
+| Respect des règles    |☐|
+| Affichage de tous les pions  |☐|
  
  --------
- Dépendance
- -
+Dépendance
+-
+ 
  
  - Python 2.7
  - Pygame pour Python 2.7
- 
- --------
- Fonctionnement
- -
- **Importation**
+
+--------
+Fonctionnement
+-
+
+**Importation**
 
 
     import pygame
     from pygame.locals import *
     import time
     
- **Affichage du damier**
+**Affichage du damier**
  
  
      BLACK = (150,   150,   150  )  #Set color
@@ -55,7 +58,7 @@ TODO
             [W,B,W,B,W,B,W,B]
           ]
           
- **Initialisation Pygame**
+**Initialisation Pygame**
  
  
      TILESIZE  = 100
@@ -143,3 +146,16 @@ TODO
     pygame.quit()
  
  
+
+----------
+Les pieces
+-
+
+**Les pieces sont de 100x100 pixels au format PNJ et avec une couche alpha:**
+
+![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/chavalier.png)
+![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/fou.png)
+![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/pion.png)
+![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/reine.png)
+![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/roi.png)
+![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/tour.png)
