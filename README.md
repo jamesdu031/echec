@@ -1,15 +1,15 @@
-# Echec
-Le jeu d'echec pour un devoir ISN
+# Échec
+Le jeu d’échec pour un devoir ISN
 
 ---------
 TODO
 -
 
-| Point | Etat |
+| Point | État |
 | --------------------- | :------------------------: |
 | Affichage du damier   |☑|
 | Affichage des pions   |☑|
-| Ecran d'accueil       |☐|
+| Écran d'accueil       |☐|
 | Déplacer les pions    |☑|
 | Respect des règles    |☐|
 | Affichage de tous les pions  |☐|
@@ -83,7 +83,7 @@ Fonctionnement
      tour = [0,0]
      fenetre.blit(tourp, (tour[0], tour[1]))
      
-**Fonction et Initialisation des postions des pieces**
+**Fonction et Initialisation des postions des pièces**
 
 
     def pos_piece(piece, abscisse, ordonnee):   #Fonction postion des piece par rapport au damier
@@ -136,7 +136,7 @@ Fonctionnement
                         pygame.draw.rect(DISPLAYSURF, colours[tilemap[row][column]],     (column*TILESIZE,row*TILESIZE,TILESIZE,TILESIZE))
                     
                     
-**Affichage piece et fin du programme**
+**Affichage des pièce et fin du programme**
 
 
       reinepo = fenetre.blit(reinep, (reine[0], reine[1]))
@@ -148,10 +148,10 @@ Fonctionnement
  
 
 ----------
-Les pieces
+Les pièces
 -
 
-**Les pieces sont de 100x100 pixels au format PNJ et avec une couche alpha:**
+**Les pièces sont de 100x100 pixels au format PNG et avec une couche alpha:**
 
 ![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/chavalier.png)
 ![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/fou.png)
@@ -159,3 +159,24 @@ Les pieces
 ![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/reine.png)
 ![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/roi.png)
 ![](https://raw.githubusercontent.com/jamesdu031/echec/master/pion/tour.png)
+
+
+----------
+Le damier
+-
+
+**Le damier est générer par le programme (voir [#fonctionnement](#fonctionnement))**
+
+Les case noirs ont une couleur (RGB) de: **150 150 150**  
+Les case blanches ont une couleur (RGB) de: **255 255 255**
+
+
+----------
+Capture
+-
+
+**Voici des captures (v0.1-alpha.1)**
+<img src="https://raw.githubusercontent.com/jamesdu031/echec/master/screen.PNG" alt="t" style="width: 200px;"/>
+
+----------
+MIT License Copyright (c) 2018
