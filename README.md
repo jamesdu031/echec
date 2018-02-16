@@ -178,7 +178,8 @@ Pour plus de détail voir le **[wiki](https://github.com/jamesdu031/echec/wiki)*
 Capture
 -
 
-**Voici des captures (v0.1-alpha.1)**
+**Voici des captures (v0.1-alpha.1)**  
+
 <img src="https://raw.githubusercontent.com/jamesdu031/echec/master/screen.PNG" alt="" width="200" height="200"/>
 
 ----------
