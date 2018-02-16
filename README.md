@@ -17,8 +17,8 @@ TODO
  Dépendance
  -
  
- - Python 2.6
- - Pygame pour Python 2.6
+ - Python 2.7
+ - Pygame pour Python 2.7
  
  --------
  Fonctionnement
