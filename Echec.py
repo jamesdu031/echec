@@ -82,19 +82,19 @@ def pos_piece(piece, abscisse, ordonnee):
         piece[0] = abscisse*(800/8)
         piece[1] = ordonnee*(800/8)
     if abscisse > 7 or ordonnee > 7:
-        print("Error, piece value is too high")
+        print("Erreur, valeur de la piece trop haute")
         piece[0] = 0
         piece[1] = 0
 
 def deplacement(piece, piecepo):
     global event
     if piecepo.collidepoint(event.pos[0],event.pos[1]):         #Prend le pion
-        print("Select G")
+        print("Selectionne la destination")
         time.sleep(2)                                          #Attend 2s avant annulation
         for event in pygame.event.get():
             if event.type == MOUSEBUTTONDOWN:                  #Pose le pion
                 if event.button == 1:
-                    print("Select D")
+                    print("Position de destination")
                     pos_piece(piece,event.pos[0] // 100,event.pos[1] // 100)
         print("ok piece")
 
